@@ -2,17 +2,16 @@ from bubanj import Bubanj
 from tiket import Tiket
 
 
-tiket = Tiket()
 bubanj = Bubanj()
 
 
 def lucky_six():
 
-    tiket.uplata_fn()
     bubanj.izvlacenje_brojeva()
 
-    print(f'----------------------------------------------\nDobitak: {int(tiket.uplata) * bubanj.kvota} rsd\nKvota: {bubanj.kvota}\n'
-          f'Broj pogodaka: {bubanj.pogoci}')
+    dobitak = round(sum(bubanj.kvota) * bubanj.tiket.uplata, 2)
+
+    print(f'----------------------------------------------\nKvota: {bubanj.kvota}\nDobitak: {dobitak}')
 
 
 lucky_six()
