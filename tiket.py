@@ -23,7 +23,7 @@ class Tiket:
                 unos = unos.split()
                 kombinacija = [int(i) for i in unos if int(i) < 49]
 
-                if len(self.kombinacija) != 6:
+                if len(kombinacija) != 6:
                     print('Neophodno je uneti 6 cifara (1-48)!\nPokusajte ponovo!')
                     self.kombinacija_fn()
                 else:
